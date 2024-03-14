@@ -7,6 +7,10 @@ const port = 8080;
 
 const FILLOUT_API_KEY = process.env.FILLOUT_API_KEY;
 
+app.get("/", (req, res) => {
+  res.send("Hello world!");
+});
+
 app.get("/:formId/filteredResponses", async (req, res) => {
   const formId = req.params.formId;
   const limit = req.query.limit;
