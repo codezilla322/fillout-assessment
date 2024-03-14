@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 const app = express();
-const port = 80;
+const port = 3000;
 
 const FILLOUT_API_KEY = process.env.FILLOUT_API_KEY;
 
